@@ -25,16 +25,6 @@ const App = () => {
     toSet(newValue)
   }
 
-  const setToGood = (newGood) => {
-    setGood(newGood)
-  }
-  const setToNeutral = (newNeutral) => {
-    setNeutral(newNeutral)
-  }
-  const setToBad = (newBad) => {
-    setBad(newBad)
-  }
-
   return (
     <div>
       <h1>Give Feedback</h1>
