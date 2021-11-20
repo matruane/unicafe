@@ -4,13 +4,17 @@ const Button = ({ handleClick, text }) => (
   <button onClick={handleClick}>{text}</button>
 )
 
-const Display = ({ good, neutral, bad}) => {
+const Display = ({ good, neutral, bad }) => {
+  let total = good + neutral + bad
   return (
     <div>
       <h1>Statistics</h1>
       <p>good {good}</p>
       <p>neutral {neutral}</p>
       <p>bad {bad}</p>
+      <p>all {total}</p>
+      <p>average {(good/total) - (bad/total)}</p>
+      <p>positive {good / total * 100} %</p>
     </div>
   )
 }
